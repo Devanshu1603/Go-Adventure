@@ -67,6 +67,7 @@ const TourismBlog = () => {
       {/* Hero Section */}
       <section className="hero">
         <h1>Welcome to Our Blog</h1>
+        <h2>Explore, Dream, Discover</h2>
       </section>
 
       {/* Blogs Section */}
