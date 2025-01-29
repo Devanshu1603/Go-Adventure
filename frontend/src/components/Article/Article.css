@@ -1,0 +1,104 @@
+.article-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+    padding-top: 100px;
+}
+
+.carousel-container {
+    display: flex;
+    animation: scroll 15s linear infinite; /* Continuous scroll animation */
+    will-change: transform;
+    position: relative;
+    bottom: 20px;
+}
+
+.article-carousel h1 {
+    position: relative;
+    bottom: 65px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    z-index: 1000;
+}
+
+.article {
+    flex: 0 0 20%;
+    margin: 10px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    width: 300px; /* Width of individual article */
+}
+
+.article img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.article-info {
+    padding: 15px;
+}
+
+.article-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.article-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.article-info .read-more {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.article-info .read-more:hover {
+    color: #0056b3;
+}
+
+/* Continuous scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause animation on hover */
+.article-carousel:hover .carousel-container {
+    animation-play-state: paused;
+}
+
+/* Additional styling for dots if needed */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #007bff;
+}

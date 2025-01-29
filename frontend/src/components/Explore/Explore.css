@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: #fff;
+    color: #333;
+}
+header {
+    background: url('C:\Users\Devanshu Kumar singh\.vscode\Tourism\frontend\src\components\images\hill.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    font-size: 3rem;
+}
+
+.explore-header{
+    display: flex;
+    gap: 15px;
+    position: relative;
+    left: 165px;
+    top: 100px;
+}
+
+.explore-subheader{
+    position: relative;
+    top: 160px;
+    right: 200px;
+    font-size: 20px;
+}
+
+.search-container {
+    position: absolute;
+    top: 63%;
+    left: 575px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999; /* Ensure it appears above other elements */
+    overflow-x: hidden;
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+}
+
+.footer-search-box input {
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    height: 50px;
+    font-size: 17px;
+    padding-left: 30px;
+
+}
+.footer-search-box button {
+    background-color: #4cae4c;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    position: relative;
+}
+.gallery{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+
+
+  .Explore-Footer{
+    position: relative;
+    bottom: 1120px;
+    width: 100%;
+    z-index: 100;
+    height: 370px;
+  }
+
+  .results{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .result-article {
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 300px;
+    height:400px;
+}
+
+.article-info h4 a{
+    font-size: 17px;
+}
+
+.result-article img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.explore-nav-overlay {
+    width: 445px;
+    position: absolute;
+    top: -20px;
+    left: 1091px;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+
+
+

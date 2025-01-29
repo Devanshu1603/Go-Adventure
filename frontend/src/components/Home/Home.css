@@ -1,0 +1,122 @@
+*{
+    scrollbar-width: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .home-container{
+      height: auto;
+      width:100%;
+    height: 80vh;
+      position: relative;
+    overflow: hidden;
+  }
+  
+  .home-container img{
+      height:80vh;
+      width: 100%;
+      display: block;
+    object-fit: cover;
+  }
+  .nav-overlay {
+      position: absolute;
+      top: 0; /* Align to the top */
+      right: 0; /* Align to the right */
+      width: auto; /* Adjust width to fit content */
+      height: auto; /* Adjust height to fit content */
+      display: flex;
+      justify-content: flex-end; /* Align content to the right */
+      align-items: flex-start; /* Align content to the top */
+      padding: 0; /* Remove padding */
+      margin: 0; /* Remove margin */
+    z-index: 1000;
+    }
+  
+    .text-overlay h1{
+      font-size: 35px;
+      width: 1200px;
+      position: relative;
+      top: 150px;
+    }
+  
+    .text-overlay p{
+      color: "#fff";
+      font-size : 18px;
+      position: relative;
+      left: 450px;
+      top: 145px;
+    }
+  
+    .text-overlay input{
+      width: 370px;
+      border-radius: 6px;
+      background-color: #fff;
+      color: #333;
+      font-size: 16px;
+      height: 50px;
+      position: relative;
+      top: 80px;
+    }
+  
+    .form{
+      position: relative;
+      left: 340px;
+      top: 55px;
+    }
+  
+    .text-overlay button{
+      background-color: #f59e0b;
+      height: 50px;
+      width: 120px;
+      border-radius: 6px;
+      position: relative;
+      left: 10px;
+      top: 80px;
+      cursor: pointer;
+      font-size: 16px;
+    color: #fff;
+    }
+
+    .sub-btn{
+      border: none;
+    }
+  
+  /* text on img  */
+  
+  .text-overlay {
+    position: absolute; /* Position the text overlay absolutely within the container */
+    top: 50%; /* Adjust this value to position the text vertically */
+    left: 50%; /* Adjust this value to position the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text overlay */
+    z-index: 2; /* Ensure the text overlay is above the subscription section */
+    color: white; /* Example: Set text color to white for visibility */
+    text-align: center; /* Center the text */
+    font-size: 30px;
+    text-align: left;
+  }
+  
+  /* gallery */
+  
+  
+  
+  .Footer{
+   margin-bottom: 100px; 
+  }
+  
+  /* service */
+  /* .SErvice{
+   position: relative;
+   bottom: 100px;
+  } */
+  
+  /* .NewsLetter{
+    position: relative;
+    bottom: 400px;
+  } */
+  
+  .home-preloader{
+    position: relative;
+    top: 130px;
+    left: 27%;
+  }
+
+ 

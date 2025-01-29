@@ -1,0 +1,151 @@
+.process-container{
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 550px;
+    position: relative;
+    padding-top: 50px;
+  }
+  
+  .text-center {
+    position: relative;
+    top: 10px;
+  }
+  
+  .process-section-title{
+    font-size: 30px;
+    position: relative;
+  }
+  
+  /* .process-section-title::after {
+    content: '';
+    position: absolute;
+    left: 130px;
+    top: 50%;
+    width: 50px; 
+    height: 2px; 
+    background-color: #4cae4c; 
+  }
+  
+  .process-section-title::before {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 50%; 
+    width: 50px; 
+    height: 2px; 
+    background-color: #4cae4c; 
+  } */
+  
+  .text-primary{
+    color: #4cae4c;
+    font-size: 35px;
+  }
+  
+  .process-row{
+    height: 300px;
+    position: relative;
+    top: 60px;
+    width: 208vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .process{
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .process-item {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+    position: relative;
+    bottom: 15px;
+    height: 300px;
+    width: 310px;
+  }
+
+  .process-item .process-icon {
+    margin: 0 auto 30px auto;
+    width: 65px;
+    height: 65px;
+    transition: .5s;
+    color: #007bff;
+    font-size: 45px;
+  }
+
+  .process-icon i{
+    font-size: 45px;
+  }
+  
+
+  .process-item i,
+  .process-item h4,
+  .process-item p {
+    transition: .5s;
+  }
+
+  .process:hover .process-item .process-icon {
+    transform: translateY(135px);
+    z-index: 10000;
+  }
+
+  .process:hover .process-item .process-icon i {
+    color: #fff !important;
+  }
+
+  .process:hover h4 {
+    transform: translateY(120px);
+    color: #fff !important;
+  }
+  .process:hover p {
+    transform: translateY(-140px);
+    transition: opacity 0.3s ease, transform 0.5s ease;
+  }
+  
+  .process-item h4,
+  .process-item p {
+    transition: 0.5s;
+  }
+  
+  .process:hover {
+    background-color: transparent;
+  }
+  
+  .process-item::after {
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    height: 160px;
+    background-color: #007bff;
+    /* border-radius: 50%; */
+    transform: scale(0);
+    transform-origin: center bottom;
+    transition: transform 0.5s ease;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  
+  .process:hover .process-item::after {
+    transform: scale(1);
+  }
+  
+  .process:hover {
+    cursor: pointer;
+  }
+  
+  .process:hover h4 {
+    color: #fff !important;
+    z-index: 1000;
+  }
+  
+  
