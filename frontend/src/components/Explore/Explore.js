@@ -28,7 +28,7 @@ const Explore = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/places/search', {
+      const response = await fetch('https://tourism-five-azure.vercel.app/api/places/search', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -17,7 +17,7 @@ const TourismBlog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get('http://localhost:8001/api/blogs');
+        const response = await axios.get('https://tourism-five-azure.vercel.app/api/blogs');
         setBlogs(response.data); // Set the blogs state with the fetched data
       } catch (error) {
         console.error('Error fetching blogs:', error);
@@ -48,7 +48,7 @@ const TourismBlog = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/api/blogs', formData, {
+      const response = await axios.post('https://tourism-five-azure.vercel.app/api/blogs', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -80,7 +80,7 @@ const TourismBlog = () => {
           {blogs.length > 0 ? (
             blogs.map((blog) => (
               <div className="blog-card" key={blog._id}>
-                <img src={`http://localhost:8000/uploads/${blog.image}`} alt={blog.title} />
+                <img src={`https://tourism-five-azure.vercel.app/uploads/${blog.image}`} alt={blog.title} />
                 <div className="content">
                   <h3>{blog.title}</h3>
                   <p>{blog.content.substring(0, 100)}...</p>

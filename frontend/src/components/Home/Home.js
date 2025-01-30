@@ -17,7 +17,7 @@ const Home = () => {
 
     try {
       // Sending POST request to your backend API
-      const response = await axios.post("http://localhost:8000/api/subscribers/subscribe", { email });
+      const response = await axios.post("https://tourism-five-azure.vercel.app/api/subscribers/subscribe", { email });
       window.alert(response.data.message); 
       setEmail(""); // Clear email input field
     } catch (error) {

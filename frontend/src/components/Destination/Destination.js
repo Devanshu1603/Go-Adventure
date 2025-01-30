@@ -21,7 +21,7 @@ const PopularDestinations = () => {
     useEffect(() => {
         const fetchDestinations = async () => {
             const promises = top25Places.map(async (place) => {
-                const response = await fetch(`http://localhost:8000/api/destination/${encodeURIComponent(place)}`);
+                const response = await fetch(`https://tourism-five-azure.vercel.app/api/destination/${encodeURIComponent(place)}`);
                 if (response.ok) {
                     return response.json();
                 } else {

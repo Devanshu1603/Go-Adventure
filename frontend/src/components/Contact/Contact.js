@@ -21,7 +21,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8001/api/contact/submit', formData);
+      const response = await axios.post('https://tourism-five-azure.vercel.app/api/contact/submit', formData);
       setFeedback(response.data.message); // Show success message
       setFormData({ name: '', email: '', message: '' }); // Reset form
     } catch (error) {

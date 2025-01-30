@@ -99,7 +99,7 @@ const Login_Signup = ({ setIsAuthenticated }) => {
             return handleError('email and password are required');
         }
         try {
-            const url = "http://localhost:8000/auth/login";
+            const url = "https://tourism-five-azure.vercel.app/auth/login";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
@@ -138,7 +138,7 @@ const Login_Signup = ({ setIsAuthenticated }) => {
             return handleError('name, email and password are required')
         }
         try {
-            const url = "http://localhost:8000/auth/signup";
+            const url = "https://tourism-five-azure.vercel.app/auth/signup";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {

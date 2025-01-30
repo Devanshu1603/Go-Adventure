@@ -29,6 +29,10 @@ app.use('/products', ProductRouter);
 app.use('/api/subscribers', subscriberRouter);
 app.use('/api/blogs', blogRoutes); 
 app.use('/api/contact', contactRouter);
+
+app.get("/about", (req,res) => {
+  res.status(200).send("About Page");
+});
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
